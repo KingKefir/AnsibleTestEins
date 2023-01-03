@@ -7,9 +7,9 @@
         name: firewalld
         state: started
         enabled: yes
-    - name: permit traffic on 8080/tcp
+    - name: permit traffic on 22/tcp
       ansible.posix.firewalld:
-        port: 8080
+        port: 22
         permanent: yes
         state: enabled
         immediate: yes
